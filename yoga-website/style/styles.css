@@ -1,17 +1,17 @@
 
-/* --- Global Styles & Variables --- */
+
 :root {
-    --primary-color: #2c3e50; /* Dark Blue/Grey (Header/Footer) */
-    --secondary-color: #6c757d; /* Medium Grey (Hero Content Box) */
-    --accent-color: #e67e22; /* Orange (Buttons, Highlights) */
-    --accent-hover-color: #d35400; /* Darker Orange (Hover) */
-    --light-bg-color: #f8f9fa; /* Very Light Grey (Main Background) */
+    --primary-color: #2c3e50; 
+    --secondary-color: #6c757d; 
+    --accent-color: #e67e22; 
+    --accent-hover-color: #d35400; 
+    --light-bg-color: #f8f9fa;
     --white-color: #ffffff;
     --dark-text-color: #333333;
-    --light-text-color: #f1f1f1; /* Light grey for text on dark backgrounds */
-    --font-family: 'Arial', sans-serif; /* Simple, clean font */
-    --border-radius: 8px; /* Consistent rounded corners */
-    --container-width: 1140px; /* Max width for content */
+    --light-text-color: #f1f1f1; 
+    --font-family: 'Arial', sans-serif; 
+    --border-radius: 8px; 
+    --container-width: 1140px;
   }
   
   * {
@@ -49,7 +49,7 @@
   img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove extra space below images */
+    display: block; 
   }
   
   .container {
@@ -58,7 +58,7 @@
     padding: 0 20px;
   }
   
-  /* --- Header --- */
+  
   header {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -96,30 +96,30 @@
   }
   
   nav ul li a:hover,
-  nav ul li a.active /* Add 'active' class to current page link if needed */ {
+  nav ul li a.active  {
     color: var(--white-color);
     background-color: rgba(255, 255, 255, 0.1);
   }
   
-  /* --- Hero Section --- */
+ 
   #hero {
     padding: 60px 0;
-    background-color: var(--white-color); /* White background for this section */
-    margin-bottom: 40px; /* Space before next section */
+    background-color: var(--white-color); 
+    margin-bottom: 40px; 
   }
   
   #hero .container {
     display: flex;
     align-items: center;
-    gap: 40px; /* Space between image and content */
+    gap: 40px; 
   }
   
   .hero-image {
-    flex: 1 1 55%; /* Allow image to take more space */
+    flex: 1 1 55%; 
   }
   
   .hero-content {
-    flex: 1 1 45%; /* Content takes remaining space */
+    flex: 1 1 45%; 
     background-color: var(--secondary-color);
     color: var(--light-text-color);
     padding: 30px;
@@ -129,7 +129,7 @@
   
   .hero-content h1 {
     color: var(--white-color);
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: 2rem; 
     margin-bottom: 1rem;
   }
   
@@ -165,12 +165,12 @@
     color: var(--white-color);
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Separator line */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
     padding-top: 1rem;
   }
   
   .services-list ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none; 
     padding-left: 0;
   }
   
@@ -178,23 +178,23 @@
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
     position: relative;
-    padding-left: 18px; /* Space for custom bullet */
+    padding-left: 18px; 
   }
   
-  /* Custom bullet */
+  
   .services-list li::before {
-    content: '•'; /* Or use an icon font like FontAwesome */
+    content: '•'; 
     color: var(--accent-color);
     position: absolute;
     left: 0;
     top: 1px;
-    font-size: 1.2rem; /* Adjust size of bullet */
+    font-size: 1.2rem;
   }
   
-  /* --- Contacts Section --- */
+ 
   #contacts {
     padding: 60px 0;
-    background-color: var(--light-bg-color); /* Main light background */
+    background-color: var(--light-bg-color); 
   }
   
   #contacts .section-title,
@@ -207,12 +207,12 @@
   #contacts .container-flex {
      display: flex;
      justify-content: space-between;
-     align-items: flex-start; /* Align items to top */
+     align-items: flex-start; 
      gap: 40px;
   }
   
   .contact-info {
-     flex-basis: 45%; /* Adjust basis as needed */
+     flex-basis: 45%; 
   }
   
   .contact-info h3 {
@@ -227,30 +227,30 @@
   
   .contact-info p strong {
       display: inline-block;
-      min-width: 60px; /* Align labels */
+      min-width: 60px; 
   }
   
   .map-container {
-     flex-basis: 50%; /* Adjust basis */
+     flex-basis: 50%; 
   }
   
   .map-container iframe {
      width: 100%;
-     height: 350px; /* Adjust map height */
+     height: 350px; 
      border: none;
      border-radius: var(--border-radius);
      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  /* --- Testimonials Section --- */
+  
   #testimonials {
     padding: 60px 0;
-    background-color: var(--white-color); /* White background */
+    background-color: var(--white-color); 
   }
   
   .testimonial-slider {
-      max-width: 600px; /* Adjust width of the testimonial box */
-      margin: 0 auto; /* Center the slider */
+      max-width: 600px; 
+      margin: 0 auto; 
       text-align: center;
   }
   
@@ -259,20 +259,20 @@
       padding: 30px;
       border-radius: var(--border-radius);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      margin-bottom: 20px; /* Space before arrows */
+      margin-bottom: 20px; 
   }
   
-  .testimonial-card img.logo { /* Style for the logo */
-      height: 40px; /* Adjust logo height */
+  .testimonial-card img.logo { 
+      height: 40px; 
       width: auto;
-      margin: 0 auto 15px auto; /* Center logo */
+      margin: 0 auto 15px auto; 
   }
   
   .testimonial-card blockquote {
       font-style: italic;
       color: #555;
       margin-bottom: 15px;
-      border: none; /* Remove default blockquote borders */
+      border: none; 
       padding: 0;
   }
   
@@ -286,30 +286,30 @@
       background-color: var(--accent-color);
       color: var(--white-color);
       border: none;
-      width: 40px; /* Square buttons */
+      width: 40px; 
       height: 40px;
       border-radius: var(--border-radius);
       font-size: 1.2rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin: 0 8px; /* Space between buttons */
+      margin: 0 8px; 
   }
   
   .slider-controls button:hover {
       background-color: var(--accent-hover-color);
   }
   
-  /* --- Footer --- */
+ 
   footer {
     background-color: var(--primary-color);
     color: var(--light-text-color);
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px; /* Space above footer */
+    margin-top: 40px; 
     font-size: 0.9rem;
   }
   
-  /* --- Responsive Design --- */
+  
   @media (max-width: 992px) {
     .container {
       max-width: 960px;
@@ -332,7 +332,7 @@
       max-width: 720px;
     }
   
-    /* Header - Add styles for burger menu if implemented */
+    
     header .container {
         flex-direction: column;
         align-items: center;
@@ -343,18 +343,18 @@
   
   
     #hero .container {
-      flex-direction: column; /* Stack image and content */
+      flex-direction: column; 
       text-align: center;
     }
     .hero-image {
         margin-bottom: 30px;
-        max-width: 80%; /* Reduce image size slightly */
+        max-width: 80%; 
         margin-left: auto;
         margin-right: auto;
     }
   
     #contacts .container-flex {
-        flex-direction: column; /* Stack contact info and map */
+        flex-direction: column; 
         align-items: center;
     }
     .contact-info {
@@ -367,13 +367,13 @@
         flex-basis: 100%;
         width: 100%;
     }
-    .map-container iframe { height: 300px; } /* Adjust height for mobile */
+    .map-container iframe { height: 300px; } 
   
     .testimonial-slider { max-width: 90%; }
   }
   
   @media (max-width: 576px) {
-    nav ul li { margin: 0 5px; } /* Reduce nav spacing */
+    nav ul li { margin: 0 5px; } 
     nav ul li a { padding: 5px;}
   
     .hero-content { padding: 20px; }
